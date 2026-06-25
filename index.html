@@ -1,49 +1,197 @@
-<div class="container">
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Ivan ❤️</title>
 
-    <img src="ivan.jpg" alt="Ivan"
-         style="
-         width:220px;
-         height:220px;
-         object-fit:cover;
-         border-radius:50%;
-         border:6px solid white;
-         box-shadow:0 0 30px rgba(255,255,255,.8);
-         margin-bottom:20px;">
-
-    <h1>Happy Birthday Ivan ❤️</h1>
-
-    <div class="message">
-        My Dearest Ivan,<br><br>
-
-        Every moment with you is a blessing.
-        Your smile brightens my darkest days and your love fills my heart with joy.
-        On this special birthday, I wish you endless happiness, good health, success, and all the love your heart can hold.
-
-        <br><br>
-
-        May this new year of your life bring beautiful memories, exciting opportunities, and dreams come true.
-
-        <br><br>
-
-        💖 Happy Birthday My Love 💖
-        <br>
-        Forever Yours ❤️
-    </div>
-
-    <div id="countdown"></div>
-
-</div>img{
-    animation:pulse 3s infinite;
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
 }
 
-@keyframes pulse{
+body{
+    overflow-x:hidden;
+    background:linear-gradient(135deg,#ff9ec4,#ffd6e7,#ffe9f4);
+    min-height:100vh;
+    color:#fff;
+}
+
+/* Balloons */
+.balloon{
+    position:absolute;
+    bottom:-150px;
+    width:80px;
+    height:100px;
+    border-radius:50%;
+    animation:float 12s linear infinite;
+    opacity:0.8;
+}
+
+.balloon:after{
+    content:'';
+    position:absolute;
+    width:2px;
+    height:100px;
+    background:white;
+    left:50%;
+    top:100%;
+}
+
+.red{background:#ff4d6d;}
+.pink{background:#ff85a2;}
+.gold{background:#ffd166;}
+.purple{background:#c77dff;}
+.blue{background:#72ddf7;}
+
+@keyframes float{
     0%{
-        transform:scale(1);
-    }
-    50%{
-        transform:scale(1.05);
+        transform:translateY(0);
     }
     100%{
-        transform:scale(1);
+        transform:translateY(-120vh);
     }
 }
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    position:relative;
+    z-index:2;
+}
+
+h1{
+    font-size:4rem;
+    text-shadow:0 4px 12px rgba(0,0,0,.2);
+}
+
+.subtitle{
+    font-size:1.5rem;
+    margin-top:15px;
+    margin-bottom:35px;
+}
+
+.btn{
+    background:white;
+    color:#ff4d8d;
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    font-size:1.1rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.btn:hover{
+    transform:translateY(-3px) scale(1.05);
+}
+
+.message-section{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    margin:40px auto;
+    width:90%;
+    max-width:900px;
+    padding:50px;
+    border-radius:25px;
+}
+
+.message-section h2{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:2.5rem;
+}
+
+.message{
+    line-height:2;
+    font-size:1.15rem;
+}
+
+.signature{
+    margin-top:40px;
+    text-align:right;
+    font-size:1.4rem;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:white;
+}
+</style>
+</head>
+<body>
+
+<!-- Floating Balloons -->
+<div class="balloon red" style="left:5%; animation-delay:0s;"></div>
+<div class="balloon pink" style="left:15%; animation-delay:2s;"></div>
+<div class="balloon gold" style="left:25%; animation-delay:4s;"></div>
+<div class="balloon purple" style="left:40%; animation-delay:1s;"></div>
+<div class="balloon blue" style="left:55%; animation-delay:5s;"></div>
+<div class="balloon red" style="left:70%; animation-delay:3s;"></div>
+<div class="balloon pink" style="left:85%; animation-delay:6s;"></div>
+
+<section class="hero">
+    <h1>🎂 Happy Birthday Ivan ❤️</h1>
+    <p class="subtitle">A special surprise from your loving girlfriend, Delia</p>
+
+    <a href="#message" class="btn">
+        Read My Heartfelt Birthday Message 💌
+    </a>
+</section>
+
+<section id="message" class="message-section">
+    <h2>To My Dearest Ivan ❤️</h2>
+
+    <div class="message">
+        My Love,
+
+        Today is one of the most special days of the year because it marks the day an incredible person came into this world. Happy Birthday, Ivan.
+
+        As I sit here thinking about you, I realize how lucky I am to have someone as loving, kind, caring, and amazing as you in my life. You bring so much happiness into my days, so much warmth into my heart, and so much meaning into everything we share together.
+
+        From the moment you became part of my life, you have made ordinary moments feel extraordinary. Your smile brightens my darkest days, your voice comforts me when I need reassurance, and your love gives me strength when life becomes challenging. Every memory we've created together is something I treasure deeply.
+
+        On your birthday, I want you to know how much you mean to me. You are not only the man I love, but also my best friend, my safe place, my biggest supporter, and one of the greatest blessings in my life. Every day I thank God for bringing you into my world.
+
+        I admire your determination, your kindness, your beautiful heart, and the way you always try to make the people around you happy. You inspire me more than you know, and I am proud of the person you are becoming with each passing year.
+
+        As you celebrate another year of life, I hope this new chapter brings you endless opportunities, success, good health, peace, happiness, and all the dreams you've been working so hard for. May every wish you make today move one step closer to becoming reality.
+
+        Most importantly, I hope you always remember how deeply you are loved. No matter where life takes us, my heart will always hold a special place for you. Thank you for every laugh, every conversation, every sweet moment, and every memory we've shared.
+
+        Today, I celebrate not just your birthday but the wonderful person that you are. I am grateful for your love, your patience, and your presence in my life.
+
+        Happy Birthday, my handsome, wonderful Ivan. May your day be filled with joy, surprises, laughter, and all the love you deserve.
+
+        I love you more than words can ever truly express, and I look forward to creating many more beautiful memories together.
+
+        Happy Birthday, my love. ❤️
+    </div>
+
+    <div class="signature">
+        Forever Yours,<br>
+        Delia ❤️
+    </div>
+</section>
+
+<footer>
+    Made with Love for Ivan's Birthday 🎉❤️
+</footer>
+
+</body>
+</html>
+```
