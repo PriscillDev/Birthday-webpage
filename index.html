@@ -150,11 +150,16 @@ audio{
 </head>
 <body>
 
-<!-- Background Music -->
-<audio controls autoplay loop>
+<!-- Background Music --><audio id="bgMusic" controls loop>
     <source src="1782381117599.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
 </audio>
+
+<script>
+window.addEventListener("click", function () {
+    const music = document.getElementById("bgMusic");
+    music.play();
+}, { once: true });
+</script>
 
 <!-- Floating Balloons -->
 <div class="balloon red" style="left:5%; animation-delay:0s;"></div>
