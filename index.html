@@ -1,8 +1,3 @@
-<html>
-<body>
-<img src="WA0111.jpg" width="300">
-</body>
-</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +15,7 @@
 
 body{
     overflow-x:hidden;
-    background:linear-gradient(135deg,#ff9ec4,#ffd6e7,#ffe9f4);
+    background:linear-gradient(135deg,#0f4c81,#2193b0,#6dd5ed,#bdefff);
     min-height:100vh;
     color:#fff;
 }
@@ -53,10 +48,10 @@ body{
 .blue{background:#72ddf7;}
 
 @keyframes float{
-    0%{
+    from{
         transform:translateY(0);
     }
-    100%{
+    to{
         transform:translateY(-120vh);
     }
 }
@@ -75,18 +70,28 @@ body{
 
 h1{
     font-size:4rem;
-    text-shadow:0 4px 12px rgba(0,0,0,.2);
+    text-shadow:0 4px 12px rgba(0,0,0,.3);
 }
 
 .subtitle{
     font-size:1.5rem;
     margin-top:15px;
-    margin-bottom:35px;
+    margin-bottom:25px;
+}
+
+/* Photo */
+.hero img{
+    width:300px;
+    max-width:90%;
+    border-radius:20px;
+    border:6px solid white;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+    margin-bottom:25px;
 }
 
 .btn{
     background:white;
-    color:#ff4d8d;
+    color:#0f4c81;
     padding:15px 35px;
     border:none;
     border-radius:50px;
@@ -135,9 +140,21 @@ footer{
     padding:30px;
     color:white;
 }
+
+audio{
+    display:block;
+    margin:20px auto;
+}
 </style>
+
 </head>
 <body>
+
+<!-- Background Music -->
+<audio controls autoplay loop>
+    <source src="1782381117599.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 
 <!-- Floating Balloons -->
 <div class="balloon red" style="left:5%; animation-delay:0s;"></div>
@@ -149,57 +166,86 @@ footer{
 <div class="balloon pink" style="left:85%; animation-delay:6s;"></div>
 
 <section class="hero">
+
+    <!-- Your Photo -->
+    <img src="WA0111.jpg" alt="Ivan's Photo">
+
     <h1>🎂 Happy Birthday Ivan ❤️</h1>
-    <p class="subtitle">A special surprise from your loving girlfriend, Delia</p>
+
+    <p class="subtitle">
+        A special surprise from your loving girlfriend, Delia
+    </p>
 
     <a href="#message" class="btn">
         Read My Heartfelt Birthday Message 💌
     </a>
+
 </section>
 
 <section id="message" class="message-section">
-    <h2>To My Dearest Ivan ❤️</h2>
 
-    <div class="message">
-        My Love,
+<h2>To My Dearest Ivan ❤️</h2>
 
-        Today is one of the most special days of the year because it marks the day an incredible person came into this world. Happy Birthday, Ivan.
+<div class="message">
 
-        As I sit here thinking about you, I realize how lucky I am to have someone as loving, kind, caring, and amazing as you in my life. You bring so much happiness into my days, so much warmth into my heart, and so much meaning into everything we share together.
+<p>My Love,</p>
 
-        From the moment you became part of my life, you have made ordinary moments feel extraordinary. Your smile brightens my darkest days, your voice comforts me when I need reassurance, and your love gives me strength when life becomes challenging. Every memory we've created together is something I treasure deeply.
+<p>
+Today is one of the most special days of the year because it marks the day an incredible person came into this world. Happy Birthday, Ivan.
+</p>
 
-        On your birthday, I want you to know how much you mean to me. You are not only the man I love, but also my best friend, my safe place, my biggest supporter, and one of the greatest blessings in my life. Every day I thank God for bringing you into my world.
+<p>
+As I sit here thinking about you, I realize how lucky I am to have someone as loving, kind, caring, and amazing as you in my life.
+</p>
 
-        I admire your determination, your kindness, your beautiful heart, and the way you always try to make the people around you happy. You inspire me more than you know, and I am proud of the person you are becoming with each passing year.
+<p>
+You bring so much happiness into my days, so much warmth into my heart, and so much meaning into everything we share together.
+</p>
 
-        As you celebrate another year of life, I hope this new chapter brings you endless opportunities, success, good health, peace, happiness, and all the dreams you've been working so hard for. May every wish you make today move one step closer to becoming reality.
+<p>
+From the moment you became part of my life, you have made ordinary moments feel extraordinary. Your smile brightens my darkest days, your voice comforts me when I need reassurance, and your love gives me strength when life becomes challenging.
+</p>
 
-        Most importantly, I hope you always remember how deeply you are loved. No matter where life takes us, my heart will always hold a special place for you. Thank you for every laugh, every conversation, every sweet moment, and every memory we've shared.
+<p>
+On your birthday, I want you to know how much you mean to me. You are not only the man I love, but also my best friend, my safe place, my biggest supporter, and one of the greatest blessings in my life.
+</p>
 
-        Today, I celebrate not just your birthday but the wonderful person that you are. I am grateful for your love, your patience, and your presence in my life.
+<p>
+I admire your determination, your kindness, your beautiful heart, and the way you always try to make the people around you happy.
+</p>
 
-        Happy Birthday, my handsome, wonderful Ivan. May your day be filled with joy, surprises, laughter, and all the love you deserve.
+<p>
+May this new chapter bring you success, good health, peace, happiness, and every dream you've been working so hard for.
+</p>
 
-        I love you more than words can ever truly express, and I look forward to creating many more beautiful memories together.
+<p>
+Most importantly, I hope you always remember how deeply you are loved.
+</p>
 
-        Happy Birthday, my love. ❤️
-    </div>
+<p>
+Happy Birthday, my handsome, wonderful Ivan. May your day be filled with joy, surprises, laughter, and all the love you deserve.
+</p>
 
-    <div class="signature">
-        Forever Yours,<br>
-        Delia ❤️
-    </div>
+<p>
+I love you more than words can ever truly express, and I look forward to creating many more beautiful memories together.
+</p>
+
+<p>
+Happy Birthday, my love. ❤️
+</p>
+
+</div>
+
+<div class="signature">
+Forever Yours,<br>
+Delia ❤️
+</div>
+
 </section>
 
 <footer>
-    Made with Love for Ivan's Birthday 🎉❤️
+Made with Love for Ivan's Birthday 🎉❤️
 </footer>
 
-</body><audio controls>
-    <source src=''1782381117599.mp3''
-    type=audio/mpeg''>
-    </audio>
-    
+</body>
 </html>
-```
